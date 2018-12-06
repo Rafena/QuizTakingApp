@@ -19,3 +19,7 @@ app.get('/', function(request ,  response){
     response.sendFile(__dirname +'/public_html/index.html', )
 
 });
+
+app.listen(3000 , function(){
+    
+});
