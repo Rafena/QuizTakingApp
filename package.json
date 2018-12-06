@@ -1,0 +1,23 @@
+{
+  "name": "quiztakingapp",
+  "version": "0.0.1",
+  "description": "355 Project to bulid a platform that allows users to take quizes",
+  "main": "quiz-app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ha7ka/QuizTakingApp.git"
+  },
+  "keywords": [
+    "quiz",
+    "app"
+  ],
+  "author": " Yitz Ben-Ami , Paskualino Mjed , Rafena Mustapha, Niravkumar Patel ,Rafael Santana ,  Ramandeep Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ha7ka/QuizTakingApp/issues"
+  },
+  "homepage": "https://github.com/ha7ka/QuizTakingApp#readme"
+}
