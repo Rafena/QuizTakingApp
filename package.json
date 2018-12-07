@@ -7,7 +7,8 @@
     "express": "^4.16.4",
     "mysql": "github:mysqljs/mysql",
     "sql": "^0.78.0",
-    "bootstrap" : "3.3.7"
+    "bootstrap" : ">=4.1.2",
+    "jQuery" : "3.3.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
