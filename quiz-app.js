@@ -4,9 +4,9 @@ const app = express();
 /*
     default path consts to where the html , css and javascript root dirs are located
 */
-const htmlPath = __dirname + '/public_html/';
-const cssPath = __dirname + '/CSS';
-const jsPath = __dirname + '/Scripts';
+const htmlPath = '/public_html/';
+const cssPath = '/CSS';
+const jsPath = '/Scripts';
 
 
  /*
