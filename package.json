@@ -4,14 +4,17 @@
   "description": "355 Project to bulid a platform that allows users to take quizes",
   "main": "quiz-app.js",
   "dependencies": {
+    "bootstrap": ">=4.1.2",
     "express": "^4.16.4",
+    "jquery": "^3.3.1",
     "mysql": "github:mysqljs/mysql",
-    "sql": "^0.78.0",
-    "bootstrap" : ">=4.1.2",
-    "jQuery" : "3.3.1"
+    "popper.js": "^1.14.6",
+    "sql": "^0.78.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall": "npm install",
+    "start": "sudo pm2-runtime app.js -i max  --name quiz-app"
+    //sudo pm2 start quiz-app.js --name quiz-app
   },
   "repository": {
     "type": "git",
