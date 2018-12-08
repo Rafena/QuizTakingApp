@@ -4,7 +4,7 @@ const app = express();
 /*
     default path consts to where the html , css and javascript root dirs are located
 */
-const htmlPath = '/public_html/';
+const htmlPath = 'public_html';
 const cssPath = '/CSS';
 const jsPath = '/Scripts';
 
@@ -32,7 +32,7 @@ app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 */
 
 app.get('/', function(request ,  response){
-    response.sendFile(htmlPath + 'index.html')
+    response.sendFile(htmlPath + '/index.html')
 
 });
 
