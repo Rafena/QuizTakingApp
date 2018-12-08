@@ -12,12 +12,12 @@ const jsPath = __dirname + '/Scripts';
  /*
     This includes the css file into the path
  */
-app.use('Styles', express.static(cssPath));
+app.use('/Styles', express.static(cssPath));
 
  /*
     This includes the JS file into the path
  */
-app.use('Scripts', express.static(jsPath));
+app.use('/Scripts', express.static(jsPath));
 
 /*
     adding the Bootstrap Paths to the project
