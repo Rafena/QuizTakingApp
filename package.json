@@ -12,9 +12,6 @@
     "sql": "^0.78.0"
   },
   "scripts": {
-    "preinstall": "npm install",
-    "start": "sudo pm2-runtime app.js -i max  --name quiz-app"
-    //sudo pm2 start quiz-app.js --name quiz-app
   },
   "repository": {
     "type": "git",
