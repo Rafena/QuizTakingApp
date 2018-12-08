@@ -21,11 +21,13 @@ app.use('/Scripts', express.static(jsPath));
 
 /*
     adding the Bootstrap Paths to the project
+	also j Query and font awesome
 */
 
 app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js'));
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
+app.use('/font', express.static(__dirname + '\node_modules\@fortawesome\fontawesome-free\css'));
 
 
 /*
