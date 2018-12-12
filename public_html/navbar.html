@@ -16,7 +16,8 @@
   <title>New Page</title>
 
 </head>
--->
+
+
 <body>
    <!-- Header -->
    <nav class="navbar navbar-inverse">
@@ -35,7 +36,9 @@
            </div>
            <div class="collapse navbar-collapse" id="myNavbar">
                <ul class="nav navbar-nav navbar-right">
-                  <li><a data-toggle="modal" data-target="#SignUp" class="SignUpMenu"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+
+                  <li><a data-toggle="modal" data-target="#SignUp" class="SignUpMenu"><span class="glyphicon glyphicon-user"></span> Login </a></li>
+
                </ul>
            </div>
        </div>
@@ -58,7 +61,21 @@
                   <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
                   <input type="text" class="form-control" id="usrname" placeholder="Enter email">
                 </div>
-                  <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Sign Up</button>
+
+                <div class="form-group">
+                  <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+                  <input type="text" class="form-control" id="psw" placeholder="Enter password">
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" value="" checked>Remember me</label>
+                </div>
+                  <div class="row">
+                       <center> 
+                            <button type="submit" id="SignUP" class="btn btn-primary" Style="width: 150px;" OnClick="signup_click" >Sign Up</button> 
+                           <button type="submit" id="SignIn" class="btn btn-primary" Style="width: 150px;"  OnClick="signin_Click" >Sign In</button>
+                      </center> 
+                  </div>
+
               </form>
             </div>
             <div class="modal-footer">
