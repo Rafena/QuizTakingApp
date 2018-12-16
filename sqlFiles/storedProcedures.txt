@@ -17,7 +17,7 @@ SQL Stored Procedure's
 
 6. Get all user info given username and password  as follows     ->   call SP_getUserData('john','123');
 
-7. Get all questions of given username and password  as follows  ->   call SP_getUserQuestions('john','123');
+7. Get all answers of given username and password  as follows  ->   call SP_getUserQuestions('john','123');
 
 8.
 
