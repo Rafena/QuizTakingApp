@@ -4,7 +4,7 @@
   "description": "355 Project to bulid a platform that allows users to take quizes",
   "main": "quiz-app.js",
   "dependencies": {
-    "bootstrap": ">=4.1.2",
+    "bootstrap": "3.3.7",
     "express": "^4.16.4",
     "jquery": "^3.3.1",
     "mysql": "github:mysqljs/mysql",
@@ -25,8 +25,5 @@
   "bugs": {
     "url": "https://github.com/ha7ka/QuizTakingApp/issues"
   },
-  "homepage": "https://github.com/ha7ka/QuizTakingApp#readme",
-  "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.6.0"
-  }
+  "homepage": "https://github.com/ha7ka/QuizTakingApp#readme"
 }
