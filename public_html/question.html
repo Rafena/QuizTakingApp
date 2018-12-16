@@ -10,9 +10,19 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous">
+</script>
 <body>
-
+  <div id="navbar">
+      <script>
+      $(function(){
+          $("#navbar").load("navbar.html");
+      });
+</script>
+  </div>
 <div class="col-xs-6 col-xs-offset-2">
 <form    >
   <div class="form-group" >
@@ -89,6 +99,8 @@
                   <div class="blockG" id="rotateG_07"></div>
                   <div class="blockG" id="rotateG_08"></div>
               </div>
+
+
           </div>
 
           <div class="quiz" id="quiz" data-toggle="buttons">
