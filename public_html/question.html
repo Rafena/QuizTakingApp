@@ -1,5 +1,109 @@
+
+<!------ Include the above in your HEAD tag ---------->
 <html>
-   <body>
-    <h1>Add a question</h1>
-   </body>
-</html>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<body>
+
+<div class="col-xs-6 col-xs-offset-2">
+<form    >
+  <div class="form-group" >
+
+  <div class="form-group" class="col-xs-3 col-xs-offset-2>
+    <label for="exampleFormControlSelect1">Topic</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Chapter 1</option>
+      <option>Chapter 2</option>
+      <option>Chapter 3</option>
+      <option>Charpter 4</option>
+      <option>Chapter 5</option>
+    </select>
+  </div>
+
+   <div class="form-group">
+    <label for="exampleFormControlTextarea1">Enter your question</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>
+  </div>
+</form>
+    <div class="form-group">
+    <label for="inputAddress2">Answer</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Enter Correct answer here">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Explaination</label>
+    <textarea class="form-control" id="exp-id" rows="3" placeholder="Explain answer here" > </textarea>
+  </div>
+
+
+   <div class="form-group">
+    <label for="inputAddress2">choice 1</label>
+    <input type="text" class="form-control" id="ch-1" placeholder="Enter another choice here">
+  </div>
+
+   <div class="form-group">
+    <label for="inputAddress2">Choice 2</label>
+    <input type="text" class="form-control" id="ch-2" placeholder=" choice">
+  </div>
+   <div class="form-group">
+    <label for="inputAddress2">Choise 3</label>
+    <input type="text" class="form-control" id="ch-3" placeholder="Enter another choice here">
+  </div>
+
+  </form >
+
+</div>
+
+
+
+
+
+
+<button type="submit" class="btn btn-primary mb-3">Submit Question</button>	<button type="button" class="btn btn-danger">Cancel</button>
+
+<h2>Preview </h2>
+
+<div class="container-fluid bg-info">
+    <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h3><span class="label label-warning" id="qid"></span> Question</h3>
+        </div>
+        <div class="modal-body">
+            <div class="col-xs-3 col-xs-offset-5">
+               <div id="loadbar" style="display: none;">
+                  <div class="blockG" id="rotateG_01"></div>
+                  <div class="blockG" id="rotateG_02"></div>
+                  <div class="blockG" id="rotateG_03"></div>
+                  <div class="blockG" id="rotateG_04"></div>
+                  <div class="blockG" id="rotateG_05"></div>
+                  <div class="blockG" id="rotateG_06"></div>
+                  <div class="blockG" id="rotateG_07"></div>
+                  <div class="blockG" id="rotateG_08"></div>
+              </div>
+          </div>
+
+          <div class="quiz" id="quiz" data-toggle="buttons">
+           <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer_a" value="1">One</label>
+           <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer_b" value="2">Two</label>
+           <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer_b" value="3">Three</label>
+           <label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer_B" value="4">Four</label>
+       </div>
+   </div>
+   <div class="modal-footer text-muted">
+    <span id="answer"></span>
+
+
+
+	</body>
+
+
+	</html>
