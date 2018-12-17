@@ -9,12 +9,24 @@ var subjects_list =["Binary Trees", "Linkced Lists","Matematical Induction"];
 
 
 
-
-
-$("select").append($("<option />").val("valeu").text("text2"));
-
-
 alert("Eco");
+$(document).ready(function(){
+
+
+  var  ans = $('#id10').html();
+
+
+
+for (var i=0; i<subjects_list.length;i++){
+
+$("select").append( $("<option />").val(subjects_list[i]).text(subjects_list[i]));
+}
+
+});
+
+
+
+
 
 
 
