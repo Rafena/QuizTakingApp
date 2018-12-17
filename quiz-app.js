@@ -48,6 +48,10 @@ app.get('/submitAQuestion', function(request ,  response){
     response.sendFile(htmlPath + 'question.html')
 
 });
+app.get('/navbar.html', function(request ,  response){
+    response.sendFile(htmlPath + 'navbar.html')
+
+});
 
 /*
     routes
@@ -67,6 +71,6 @@ app.post('/addDept', insertDept.insertDepartment);
 app.post('/addclass',insertClass.addClass);
 
 
-app.listen(3000 , function(){
+app.listen(3001 , function(){
     console.log('Started at 3000');
 });

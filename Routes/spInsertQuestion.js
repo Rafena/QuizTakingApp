@@ -1,4 +1,4 @@
-// insertQuestion(qDes text, classN varchar(45), 
+// insertQuestion(qDes text, classN varchar(45),
 // uName varchar(45), ans1 text,ans2 text, ans3 text, ans4 text)
 const connection = require('../config.js');
 
@@ -10,9 +10,11 @@ exports.insertQuestion = function(req,res){
 	let ans2 = req.body.ans2
 	let ans3 = req.body.ans3
 	let ans4 = req.body.ans4
+	let collegeName = req.body.college;
+	let dept = req.body.dept;
 	// System.out.println(req.body);
-	connection.query('CALL insertQuestion(?,?,?,?,?,?,?)', 
-					[description,className,userName,ans1,ans2,ans3,ans4],
+	connection.query('CALL insertQuestion(?,?,?,?,?,?,?,?,?)', 
+					[description,className,dept,collegeName,userName,ans1,ans2,ans3,ans4],
 					function(err,results,fields){
 		if(err){
 			if(err.code == 1062)throw err;
