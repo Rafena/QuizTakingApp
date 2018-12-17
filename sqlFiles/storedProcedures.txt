@@ -9,18 +9,34 @@ SQL Stored Procedure's
 
 2. Get all Colleges   ->           call SP_getAllColleges();
 
-3. Get all Departments given College Name 'X'                     ->  CALL SP_getDepartment('X');
+3. Get all Departments given College Name 'X'                             ->  CALL SP_getDepartment('X');
 
-4. Get all Classes given Department name 'x' &  college name 'y'  ->  CALL SP_getSubjects('Y','X');
+4. Get all Classes given Department name 'x' &  college name 'y'          ->  CALL SP_getSubjects('Y','X');
 
 5. Get all questions for given college, department and class as follows   ->  CALL SP_getQuestions('Queens College','Computer Science','CS111');
 
-6. Get all user info given username and password  as follows     ->   call SP_getUserData('john','123');
+6. Get all question of a gicen username                                   ->  CALL SP_getQofUser( userID )
 
-7. Get all answers of given username and password  as follows  ->   call SP_getUserQuestions('john','123');
+7. Get all answers of given username and password  as follows             ->  CALL SP_getUserQuestions( Username  ,   pass  )
 
-8.
+8. Get all answers of a given question id                                 ->  CALL getAllAnswers( questionID )
 
-9.
+9. Insert new user                                                        ->  CALL insertUser( username, pass)
 
-10. 
+10. Add a question given user , college , department , class              ->  CALL  ADDQuestion`(question,  classID ,  userID )
+
+11. Add a question given user id , class id and question                  ->  CALL  SP_insertQuestion`('question' , classID ,  userID ) 
+
+12. Edit a question given userID , questionID , and new question          ->  CALL editQuestion(newQuestion , questionID , userID )
+
+13. Add a answer given questionid and userid                              ->  CALL addAnswer(ANSWER,questionid , UserID)
+
+14. insert new class  with given class name and department id             ->  CALL insertClass('CS111', 1);
+
+15. insert new department with given department name and college id       ->  CALL insertDepartment('Computer Science', 1);
+
+16. insert new college with given college name                            ->  CALL SP_insertCollege('City College');    
+
+17. authenticate given username and pass , returns all user table fields  ->  CALL authenticate(Username , pass );
+
+
