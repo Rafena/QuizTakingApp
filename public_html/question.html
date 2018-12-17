@@ -2,6 +2,15 @@
 <!------ Include the above in your HEAD tag ---------->
 <html>
 
+
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -10,11 +19,12 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous">
+
+<script  src="../Scripts/form.js">
 </script>
+
+
+
 <body>
   <div id="navbar">
       <script>
@@ -22,23 +32,18 @@
           $("#navbar").load("navbar.html");
       });
 </script>
-
-<script type="text/javascript" src="../Scripts/form.js">
-</script>
-
   </div>
-<div class="col-xs-6 col-xs-offset-2">
+
+
+<div class="col-xs-8 col-xs-offset-3" class ="main">
 <form    >
   <div class="form-group" >
 
   <div class="form-group" class="col-xs-3 col-xs-offset-2>
-    <label for="qexampleFormControlSelect1">Topic</label>
-    <select class="form-control" id="qexampleFormControlSelect1">
-      <option>Chapter 1</option>
-      <option>Chapter 2</option>
-      <option>Chapter 3</option>
-      <option>Charpter 4</option>
-      <option>Chapter 5</option>
+    <label for="myid">Topic</label>
+    <select class="form-control">
+
+<option id ='id10'>Topic 1</option>
     </select>
   </div>
 
@@ -108,7 +113,7 @@
           </div>
 
           <div class="quiz" id="quiz" data-toggle="buttons">
-           <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer_a" value="1">One</label>
+           <label id="answer1"class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer_a" value="1">One</label>
            <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer_b" value="2">Two</label>
            <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer_b" value="3">Three</label>
            <label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer_B" value="4">Four</label>
